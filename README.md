@@ -1,36 +1,51 @@
-# House Price Prediction (Kaggle Project)
+# House Price Prediction — Kaggle Project
 
-## Visualization
-![Model Diagnostics](diagnostic_plot.png)
+**UCLA | Regression Modeling & Feature Engineering | Winter 2026**
 
-## Overview
-This project investigates the determinants of residential housing prices and builds predictive models using multiple linear regression.  
-The goal is to improve prediction accuracy and understand key factors influencing housing values.
+## Project Overview
+
+This project focuses on predicting residential housing prices using regression modeling in R. The goal is to identify important housing characteristics, compare candidate models, and improve prediction accuracy through feature transformations and interaction terms.
+
+## Dataset
+
+The training dataset contains approximately 7,000 observations and 90 variables, including structural features, property quality, neighborhood information, and sale prices.
+
+## Methods & Tools
+
+- **Language:** R
+- **Libraries:** car, caret
+- Exploratory Data Analysis (EDA)
+- Log transformation of SalePrice
+- Multiple linear regression
+- Stepwise AIC model selection
+- Interaction terms and feature engineering
+- 10-fold cross-validation
+- Residual diagnostics, VIF, and Cook's Distance
+
+## Model Development
+
+Five candidate regression models were evaluated, starting with a baseline model and progressing to more detailed specifications.
+
+The final selected model incorporates housing characteristics, renovation timing, and interactions between overall quality and structural features.
 
 ## Results
-- Kaggle Ranking: Top 15  
-- RMSE: 1,184,578  
 
-## Methods
-- Log transformation of SalePrice to stabilize variance  
-- Feature engineering (e.g., TotalSF, TotalBath)  
-- Multiple linear regression with interaction terms  
-- Model selection using AIC  
-- Model evaluation using 10-fold cross-validation  
+The final model was selected using AIC comparisons and 10-fold cross-validation.
 
-## Key Findings
-- Living area and basement size significantly increase housing prices  
-- The effect of size is stronger in higher-quality homes (interaction effect)  
-- Higher-quality properties generate greater returns from additional space  
+The project also achieved a reported Top 15 placement on the Kaggle leaderboard.
 
-## Model Diagnostics
-- Residual analysis shows no major violation of linear assumptions  
-- Q-Q plots indicate approximate normality  
-- VIF values suggest no severe multicollinearity  
+## Limitations
 
-## Tools
-- R (ggplot2, dplyr)
+The analysis relies on regression assumptions and selected housing features. Model performance may vary on unseen data, and stepwise model selection may introduce selection bias.
 
-## Report
-Full report available here:  
-[View Report](report.pdf)
+## Project Files
+
+- `analysis.Rmd` — Data exploration, model development, and diagnostics
+- `HousePriceTrain.csv` — Training data
+- `HousePriceTestNoY.csv` — Test data
+- `DataDictionary.xlsx` — Variable descriptions
+- `submission.csv` — Prediction submission
+
+## Project Attribution
+
+UCLA academic project. Individual contributions and collaborator attribution should match the original project work.
