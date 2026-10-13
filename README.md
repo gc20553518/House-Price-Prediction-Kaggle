@@ -1,6 +1,7 @@
 # House Price Prediction — Kaggle Project
 
 **UCLA | Regression Modeling & Feature Engineering | Winter 2026**
+author: "Guo On Chu and Jiayao Liu"
 
 ## Project Overview
 
@@ -49,3 +50,9 @@ The analysis relies on regression assumptions and selected housing features. Mod
 ## Project Attribution
 
 UCLA academic project. Individual contributions and collaborator attribution should match the original project work.
+
+## Project Contributors
+
+This project was completed collaboratively by Guo On Chu and Jiayao Liu as part of a UCLA academic project.
+
+The work involved data cleaning, exploratory data analysis, feature engineering, regression modeling, model evaluation, and Kaggle competition participation.
